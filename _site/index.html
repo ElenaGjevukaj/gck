@@ -9,7 +9,7 @@
 
     <title>DentistSmile | Dental Jekyll Theme</title>
     <meta name="description" content="A responsive Jekyll theme for dental clinics.">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
@@ -57,11 +57,11 @@
 
     <!-- Start Header -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only" style="background-color:#627aac;">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -70,8 +70,8 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav navbar-right" >
                 <li><a class="scroll" href="#top">Home</a></li>
                 <li><a class="scroll" href="#about">About</a></li>
                 <li><a class="scroll" href="#treatments">Treatments</a></li>
@@ -84,7 +84,7 @@
     </div>
 </nav>
 <!-- End Header -->
- 
+
         <!-- Start Hero -->
 <div class="hero" style="background: url('/img/hero.jpg') no-repeat; background-size: cover;">
     <div class="hero-content">
@@ -99,7 +99,7 @@
     <div class="container-fluid">
         
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
-            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
+            <h3><svg class="icon icon-envelope-o" style="color:#3B5998;"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
             <form action="https://getsimpleform.com/messages?form_api_token=" method="post">
                 <div class="form-field">
                     <input name="name" type="text" placeholder="Name" required>
@@ -113,7 +113,7 @@
                 <div class="form-field">
                     <textarea name="comments" placeholder="Message" required></textarea>
                 </div>
-                <input type="submit" class="btn btn-default" value="Send">
+                <input type="submit" class="btn btn-default" style="background-color:#3B5998;" value="Send">
             </form>
         </div>
 
@@ -122,8 +122,8 @@
 <!-- End Hero -->
 
 <!-- Start 3 columns -->
-<div class="three-shade-col">
-    <div class="col-sm-4">
+<div class="three-shade-col" >
+    <div class="col-sm-4" style="background-color:#3B5998;" >
         <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
         <h3>Contact Us</h3>
         <ul>
@@ -132,7 +132,7 @@
             <li><strong>Email:</strong> contact@yoursite.com</li>
         </ul>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="background-color:#3B5998;" >
         <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
         <h3>Opening Hours</h3>
         <table>
@@ -152,7 +152,7 @@
             </tbody>
         </table>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="background-color:#3B5998;" >
         <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
         <h3>Location</h3>
             <p>
@@ -164,18 +164,29 @@
 
 <!-- Start About -->
 <div id="about" class="about">
-    <div class="container-fluid">
+    <div class="container-fluid" style="color:#3B5998;">
         <h2 class="section-title">About Us</h2>
 
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row" >
+            <div class="col-sm-6" >
                 <h3>Welcome to DentistSmile</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
 
+                <div class="media" >
+                    <div class="media-left" >
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart" style="color:#3B5998;" ><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="color:#3B5998;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
+
                 <div class="media">
                     <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        <div class="boxed-icon" style="color:#3B5998;">
+                            <svg class="icon icon-medkit" style="color:#3B5998;"><use xlink:href="#icon-medkit"></use></svg>
                         </div>
                     </div>
                     <div class="media-body">
@@ -185,19 +196,8 @@
 
                 <div class="media">
                     <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                        <div class="boxed-icon" style="color:#3B5998;">
+                            <svg class="icon icon-star" style="color:#3B5998;"><use xlink:href="#icon-star"></use></svg>
                         </div>
                     </div>
                     <div class="media-body">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" >
                 <img src="img/about.jpg" alt="...">
             </div>
         </div>
@@ -221,48 +221,48 @@
         <div class="row">
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-user-md"><use xlink:href="#icon-user-md"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-user-md" style="color:#3B5998;" ><use xlink:href="#icon-user-md"></use></svg>
                         <h4>Invisible braces</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
                     </div>
                 </div>
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-diamond"><use xlink:href="#icon-diamond"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-diamond" style="color:#3B5998;" ><use xlink:href="#icon-diamond"></use></svg>
                         <h4>Cosmetic Dentistry</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
                     </div>
                 </div>
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-flask"><use xlink:href="#icon-flask"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-flask" style="color:#3B5998;" ><use xlink:href="#icon-flask"></use></svg>
                         <h4>Stain removal</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-globe"><use xlink:href="#icon-globe"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-globe" style="color:#3B5998;" ><use xlink:href="#icon-globe"></use></svg>
                         <h4>Dentures</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
                     </div>
                 </div>
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-ambulance"><use xlink:href="#icon-ambulance"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-ambulance" style="color:#3B5998;" ><use xlink:href="#icon-ambulance"></use></svg>
                         <h4>Emergency Calls</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
                     </div>
                 </div>
             
                 <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-bed"><use xlink:href="#icon-bed"></use></svg>
+                    <div class="icon-box" >
+                        <svg class="icon icon-bed" style="color:#3B5998;" ><use xlink:href="#icon-bed"></use></svg>
                         <h4>Sedation</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
                     </div>
@@ -274,97 +274,97 @@
 <!-- End Treatments -->
 
 <!-- Start Our team -->
-<div id="team" class="team"> 
-    <h2 class="section-title">Our Team</h2> 
+<div id="team" class="team" style="background-color:#3B5998;"> 
+    <h2 class="section-title" style="background-color-:#3B5998;" >Our Team</h2> 
     <div id="team-carousel">
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Britta Perry">
                 <h4>Britta Perry</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Troy Barnes">
                 <h4>Troy Barnes</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Annie">
                 <h4>Annie</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Jeff Winger">
                 <h4>Jeff Winger</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Britta Perry">
                 <h4>Britta Perry</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Troy Barnes">
                 <h4>Troy Barnes</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
     
-        <div class="expandable-box">
-            <div class="expandable-box-top">
+        <div class="expandable-box" style="background-color-:#3B5998;">
+            <div class="expandable-box-top" style="background-color:#3B5998;">
                 <img src="/img/team.jpg" alt="Annie">
                 <h4>Annie</h4>
             </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+            <div class="expandable-box-bottom"> 
+                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com" style="background-color:#3B5998;" ><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                 </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21" style="background-color:#3B5998;"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
                 </a>
             </div>
         </div>
@@ -374,10 +374,10 @@
 <!-- End Our team -->
 
 <!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('/img/parallax.jpg');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
+<div id="testimonials" class="testimonials parallax" style="background-image: url('/img/parallax.jpg');" >
+    <div class="overlay-container" >
+        <div class="overlay" style="background-color:#627aac;"></div>
+        <div class="container-fluid" >
             <div id="testimonial-carousel">
                 
                     <div class="testimonial-item">
@@ -505,10 +505,10 @@
 <div id="location" class="map" data-zoom="17" data-address="Von schroeders 273, Viña del mar, Chile" data-address-details="<img src='svg/min/logo.svg'>"></div>
 <!-- End Map -->
 
-           
+
     <!-- Start Footer -->
-<footer class="main-footer">
-    <div class="container-fluid">
+<footer class="main-footer" style="background-color:#627aac;">
+    <div class="container-fluid" >
         
         <ul class="social">
             <li><a href="http://facebook.com"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
@@ -524,11 +524,12 @@
     </div>
 </footer>
 <!-- End Footer -->
-    
+
     
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd-cdbx_bpTql_Hf9GGH5yjASBlaRbDkI&callback=initMap" type="text/javascript"></script>
     <script src="/js/all.min.js"></script>
 </body>
 </html>
